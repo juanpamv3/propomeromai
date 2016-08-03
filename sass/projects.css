@@ -1,0 +1,889 @@
+@font-face {
+  font-family: 'myriad';
+  src: url("../fonts/myriad.otf");
+}
+
+/*@mixin div-cover-bg-image ($height,$image){
+  height: $height;
+	background-image: url(../img/$image);
+	background-repeat:no-repeat;
+	background-position: center;
+	background-position-x:center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat:no-repeat;
+}*/
+/* line 64, main.scss */
+body {
+  background-color: #1dbcbd;
+}
+
+/* line 67, main.scss */
+.container {
+  padding: 0px;
+}
+
+/* line 70, main.scss */
+header {
+  height: 1px;
+  background-color: #1dbcbd;
+  position: fixed;
+  width: 16.66666667%;
+}
+
+/* line 78, main.scss */
+nav ul {
+  font-size: 17px;
+  color: white;
+  font-family: "Arial";
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  margin-top: 60px;
+}
+/* line 86, main.scss */
+nav li {
+  padding: 10px;
+  border-bottom: solid 1px #fff;
+}
+/* line 90, main.scss */
+nav li:hover {
+  background-color: #0f6465;
+}
+
+/* line 94, main.scss */
+.closeMenu {
+  font-size: 36px;
+  color: white;
+  font-family: "Arial";
+  font-weight: lighter;
+  display: none;
+}
+
+/* line 99, main.scss */
+h1 {
+  font-size: 36px;
+  color: white;
+  font-family: "myriad";
+  font-weight: bold;
+}
+
+/* line 102, main.scss */
+h2 {
+  font-size: 36px;
+  color: black;
+  font-family: "myriad";
+  font-weight: bold;
+}
+
+/* line 105, main.scss */
+h3 {
+  font-size: 15px;
+  color: white;
+  font-family: "Arial";
+  background-color: #1dbcbd;
+  padding: 8px;
+}
+
+/* line 110, main.scss */
+.logoContainer {
+  height: 100px;
+  background-color: #1dbcbd;
+  background-image: url(../images/wr_arquitectura_costa_rica.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 44px;
+  padding: 0px;
+}
+
+/*.socialContent{
+  @include box-set-up(auto, #B2B2B2);
+  min-height: 90px;
+  margin-top: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+}*/
+/* line 125, main.scss */
+.cleanA:hover {
+  color: #fff;
+}
+
+/* line 128, main.scss */
+.mainFrame {
+  height: auto;
+  min-height: 580px;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/arquitectura_costa_rica.jpg);
+  text-align: center;
+}
+/* line 133, main.scss */
+.mainFrame h1 {
+  margin-top: 260px;
+}
+
+/* line 137, main.scss */
+.scrollDown {
+  height: 33px;
+  margin-top: 140px;
+}
+
+/* line 141, main.scss */
+.innerContainer {
+  height: auto;
+  background-color: white;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* line 149, main.scss */
+.secondFrame, .secondFrameLeft, .secondFrameRight, .secondFrameRightTorreW, .secondFrameRightAllegro, .secondFrameRightModulo3, .secondFrameRightCasaSW, .secondFrameRightLomas, .secondFrameRightLagoMar, .secondFrameRightBeeSweet, .secondFrameRightEncuentros, .publications1 {
+  height: auto;
+  background-color: white;
+  min-height: 360px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* line 157, main.scss */
+.secondFrameLeft {
+  padding: 30px;
+}
+/* line 161, main.scss */
+.secondFrameLeft p {
+  font-size: 15px;
+  color: #b2b2b2;
+  font-family: "Arial";
+}
+
+/* line 166, main.scss */
+.secondFrameRight, .secondFrameRightTorreW, .secondFrameRightAllegro, .secondFrameRightModulo3, .secondFrameRightCasaSW, .secondFrameRightLomas, .secondFrameRightLagoMar, .secondFrameRightBeeSweet, .secondFrameRightEncuentros {
+  position: absolute;
+  height: 100%;
+  left: 50%;
+  background-color: #1dbcbd;
+  background-image: url(../images/diseño_de_casas_contemporaneas.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 185, main.scss */
+.thirdFrame {
+  height: auto;
+  min-height: 400px;
+  background-color: #b2b2b2;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  color: white;
+  font-family: "Arial";
+  background-image: url(../images/arquitectura_planos_costa_rica.jpg);
+  text-align: center;
+}
+/* line 191, main.scss */
+.thirdFrame h2 {
+  margin-top: 50px;
+}
+/* line 194, main.scss */
+.thirdFrame p {
+  margin: 0px;
+}
+
+/* line 198, main.scss */
+.servicesContainer {
+  margin-top: 70px;
+  padding: 0px;
+}
+
+/* line 202, main.scss */
+.firstService, .services {
+  padding: 0px;
+}
+/* line 204, main.scss */
+.firstService p, .services p {
+  border: #fff solid 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+}
+
+/* line 211, main.scss */
+.services {
+  margin-left: 4%;
+}
+
+/* line 218, main.scss */
+.fourFrame {
+  height: auto;
+  background-color: white;
+  min-height: 540px;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+/* line 221, main.scss */
+.fourFrame h2 {
+  margin-top: 50px;
+}
+
+/* line 225, main.scss */
+.teamPic {
+  margin-top: 30px;
+}
+
+/* line 231, main.scss */
+.projectsFrame {
+  height: auto;
+  background-color: black;
+  min-height: 680px;
+  padding: 0px;
+  margin: 0px;
+  font-size: 15px;
+  color: white;
+  font-family: "Arial";
+  text-align: center;
+}
+/* line 235, main.scss */
+.projectsFrame a {
+  color: #FFF;
+}
+
+/* line 239, main.scss */
+.projects {
+  height: 340px;
+  background-color: black;
+  padding: 0px;
+}
+
+/* line 243, main.scss */
+.projectImage {
+  height: auto;
+  min-height: 264px;
+  background-color: #b2b2b2;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/arquitectura_edificios_costa_rica.jpg);
+  margin-bottom: 12px;
+}
+
+/* line 248, main.scss */
+.projectImage2 {
+  height: auto;
+  min-height: 264px;
+  background-color: #b2b2b2;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/casas_modernas_costa_rica.jpg);
+  margin-bottom: 12px;
+}
+
+/* line 253, main.scss */
+.projectImage3 {
+  height: auto;
+  min-height: 264px;
+  background-color: #b2b2b2;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/diseño_de_casas_modernas.jpg);
+  margin-bottom: 12px;
+}
+
+/* line 258, main.scss */
+.projectImage4 {
+  height: auto;
+  min-height: 264px;
+  background-color: #b2b2b2;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/diseno_de_casas_contemporaneas_costa_rica.jpg);
+  margin-bottom: 12px;
+}
+
+/* line 263, main.scss */
+.projectImage5 {
+  height: auto;
+  min-height: 264px;
+  background-color: #b2b2b2;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/casas_vanguardistas.jpg);
+  margin-bottom: 12px;
+}
+
+/* line 268, main.scss */
+.projectImage6 {
+  height: auto;
+  min-height: 264px;
+  background-color: #b2b2b2;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/torres_casas_lujo.jpg);
+  margin-bottom: 12px;
+}
+
+/* line 273, main.scss */
+.projectImage7 {
+  height: auto;
+  min-height: 264px;
+  background-color: #b2b2b2;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/arquitecto_costa_rica.jpg);
+  margin-bottom: 12px;
+}
+
+/* line 278, main.scss */
+.projectImage8 {
+  height: auto;
+  min-height: 264px;
+  background-color: #b2b2b2;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/diseno_de_casas_en_costa_rica.jpg);
+  margin-bottom: 12px;
+}
+
+/* line 286, main.scss */
+footer {
+  height: auto;
+  background-color: #b2b2b2;
+  min-height: 680px;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  color: #fff;
+  font-family: "Arial";
+}
+
+/* line 292, main.scss */
+.contactBlock {
+  height: auto;
+  background-color: #b2b2b2;
+  min-height: 100px;
+  margin-top: 70px;
+  text-align: center;
+  color: #fff;
+}
+
+/* line 300, main.scss */
+.contactInfo p {
+  margin-top: 20px;
+}
+
+/* line 304, main.scss */
+.contactSocialBox {
+  height: auto;
+  background-color: #b2b2b2;
+  min-height: 50px;
+  margin-top: 40px;
+  text-align: center;
+  color: #fff;
+}
+
+/* line 311, main.scss */
+.rights {
+  height: auto;
+  background-color: #b2b2b2;
+  min-height: 50px;
+  margin-top: 10px;
+}
+
+/* line 317, main.scss */
+.publicacionesLink {
+  color: #1dbcbd;
+}
+
+/* line 320, main.scss */
+.publicacionesLink:hover {
+  color: #1dbcbd;
+}
+
+/* line 323, main.scss */
+.publications1 {
+  position: inherit;
+  height: 100%;
+  left: 0%;
+  background-color: #1dbcbd;
+  background-image: url(../images/publicacion_casa_galeria.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  /* line 343, main.scss */
+  .closeMenu {
+    display: block;
+    font-size: 36px;
+    color: white;
+    font-family: "Arial";
+    font-weight: lighter;
+  }
+
+  /* line 348, main.scss */
+  header {
+    height: 100%;
+    background-color: #1dbcbd;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    right: 100%;
+    opacity: 0;
+  }
+
+  /* line 358, main.scss */
+  nav ul {
+    font-size: 17px;
+    color: white;
+    font-family: "Arial";
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin-top: 60px;
+  }
+  /* line 366, main.scss */
+  nav li {
+    padding: 10px;
+    border-bottom: solid 1px #fff;
+  }
+
+  /* line 371, main.scss */
+  .innerContainer {
+    width: 100%;
+  }
+
+  /* line 375, main.scss */
+  .mainFrame h1 {
+    margin-top: 150px;
+  }
+
+  /* line 379, main.scss */
+  .secondFrameRight, .secondFrameRightTorreW, .secondFrameRightAllegro, .secondFrameRightModulo3, .secondFrameRightCasaSW, .secondFrameRightLomas, .secondFrameRightLagoMar, .secondFrameRightBeeSweet, .secondFrameRightEncuentros {
+    position: inherit;
+    height: 100%;
+    left: 0%;
+    background-color: #1dbcbd;
+    background-image: url(../images/diseño_de_casas_contemporaneas.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /* line 395, main.scss */
+  .thirdFrame {
+    padding: 30px 20px;
+  }
+
+  /* line 398, main.scss */
+  .glyphicon {
+    margin-top: 30px;
+  }
+
+  /* line 401, main.scss */
+  .thirdFrame h2 {
+    margin-top: 0px;
+  }
+
+  /* line 404, main.scss */
+  footer {
+    padding: 30px 20px;
+  }
+
+  /* line 407, main.scss */
+  .contactBlock {
+    margin-top: 0px;
+  }
+}
+/* line 3, projects.scss */
+.projectsImageFrame {
+  height: auto;
+  background-color: black;
+  min-height: 100px;
+  padding: 0px;
+  margin: 0px;
+}
+/* line 6, projects.scss */
+.projectsImageFrame img {
+  width: 100%;
+}
+
+/* line 10, projects.scss */
+.pictureColumn {
+  height: auto;
+  background-color: black;
+  min-height: 100px;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 13, projects.scss */
+.pictureSection {
+  height: auto;
+  background-color: white;
+  min-height: 100px;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 19, projects.scss */
+.mainFrameTorreW {
+  height: auto;
+  min-height: 580px;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/arquitectura_costa_rica.jpg);
+  text-align: center;
+}
+/* line 23, projects.scss */
+.mainFrameTorreW h1 {
+  margin-top: 260px;
+}
+
+/* line 27, projects.scss */
+.secondFrameRightTorreW {
+  background-color: #1dbcbd;
+  background-image: url(../images/projects/acabados_arquitectura_torrew.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 43, projects.scss */
+.mainFrameAllegro {
+  height: auto;
+  min-height: 580px;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/projects/arquitectura_costa_rica_allegro.jpg);
+  text-align: center;
+}
+/* line 47, projects.scss */
+.mainFrameAllegro h1 {
+  margin-top: 260px;
+}
+
+/* line 51, projects.scss */
+.secondFrameRightAllegro {
+  background-color: #1dbcbd;
+  background-image: url(../images/projects/acabados_arquitectura_allegra.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 68, projects.scss */
+.mainFrameModulo3 {
+  height: auto;
+  min-height: 580px;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/projects/arquitectura_costa_rica_Modulo3.jpg);
+  text-align: center;
+}
+/* line 72, projects.scss */
+.mainFrameModulo3 h1 {
+  margin-top: 260px;
+}
+
+/* line 76, projects.scss */
+.secondFrameRightModulo3 {
+  background-color: #1dbcbd;
+  background-image: url(../images/projects/acabados_arquitectura_modulo3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 94, projects.scss */
+.mainFrameCasaSW {
+  height: auto;
+  min-height: 580px;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/projects/arquitectura_costa_rica_sw.jpg);
+  text-align: center;
+}
+/* line 98, projects.scss */
+.mainFrameCasaSW h1 {
+  margin-top: 260px;
+}
+
+/* line 102, projects.scss */
+.secondFrameRightCasaSW {
+  background-color: #1dbcbd;
+  background-image: url(../images/projects/acabados_arquitectura_sw.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 119, projects.scss */
+.mainFrameLomas {
+  height: auto;
+  min-height: 580px;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/projects/arquitectura_costa_rica_lomas.jpg);
+  text-align: center;
+}
+/* line 123, projects.scss */
+.mainFrameLomas h1 {
+  margin-top: 260px;
+}
+
+/* line 127, projects.scss */
+.secondFrameRightLomas {
+  background-color: #1dbcbd;
+  background-image: url(../images/projects/acabados_arquitectura_lomas.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 144, projects.scss */
+.mainFrameLagoMar {
+  height: auto;
+  min-height: 580px;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/projects/arquitectura_costa_rica_lago.jpg);
+  text-align: center;
+}
+/* line 148, projects.scss */
+.mainFrameLagoMar h1 {
+  margin-top: 260px;
+}
+
+/* line 152, projects.scss */
+.secondFrameRightLagoMar {
+  background-color: #1dbcbd;
+  background-image: url(../images/projects/acabados_arquitectura_lago.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 168, projects.scss */
+.mainFrameBeeSweet {
+  height: auto;
+  min-height: 580px;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/projects/arquitectura_costa_rica_beesweet.jpg);
+  text-align: center;
+}
+/* line 172, projects.scss */
+.mainFrameBeeSweet h1 {
+  margin-top: 260px;
+}
+
+/* line 176, projects.scss */
+.secondFrameRightBeeSweet {
+  background-color: #1dbcbd;
+  background-image: url(../images/projects/acabados_arquitectura_beesweet.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 192, projects.scss */
+.mainFrameEncuentros {
+  height: auto;
+  min-height: 580px;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/projects/arquitectura_costa_rica_encuentros.jpg);
+  text-align: center;
+}
+/* line 196, projects.scss */
+.mainFrameEncuentros h1 {
+  margin-top: 260px;
+}
+
+/* line 200, projects.scss */
+.secondFrameRightEncuentros {
+  background-color: #1dbcbd;
+  background-image: url(../images/projects/acabados_arquitectura_encuentros.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

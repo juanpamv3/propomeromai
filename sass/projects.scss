@@ -1,0 +1,308 @@
+@import 'main';
+
+.projectsImageFrame{
+  @include main-box-setup(auto, $secundary-color, 100px);
+
+  img{
+    width: 100%;
+  }
+}
+.pictureColumn{
+    @include main-box-setup(auto,$secundary-color, 100px);
+}
+.pictureSection{
+  @include main-box-setup(auto,#fff, 100px);
+}
+//
+// torre w
+//
+.mainFrameTorreW{
+  @include main-box-setup_bg_image(auto, $secundary-color, 580px);
+  background-image: url(../images/arquitectura_costa_rica.jpg);
+  text-align: center;
+  h1{
+    margin-top: 260px;
+  }
+}
+.secondFrameRightTorreW{
+  @extend .secondFrameRight;
+  background-color: $primary-color;
+  background-image: url(../images/projects/acabados_arquitectura_torrew.jpg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-position-x:center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+//
+// Allegro
+//
+.mainFrameAllegro{
+  @include main-box-setup_bg_image(auto, $secundary-color, 580px);
+  background-image: url(../images/projects/arquitectura_costa_rica_allegro.jpg);
+  text-align: center;
+  h1{
+    margin-top: 260px;
+  }
+}
+.secondFrameRightAllegro{
+  @extend .secondFrameRight;
+  background-color: $primary-color;
+  background-image: url(../images/projects/acabados_arquitectura_allegra.jpg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-position-x:center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+
+//
+// Modulo 3
+//
+.mainFrameModulo3{
+  @include main-box-setup_bg_image(auto, $secundary-color, 580px);
+  background-image: url(../images/projects/arquitectura_costa_rica_Modulo3.jpg);
+  text-align: center;
+  h1{
+    margin-top: 260px;
+  }
+}
+.secondFrameRightModulo3{
+  @extend .secondFrameRight;
+  background-color: $primary-color;
+  background-image: url(../images/projects/acabados_arquitectura_modulo3.jpg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-position-x:center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+
+
+//
+// Casa Sw
+//
+.mainFrameCasaSW{
+  @include main-box-setup_bg_image(auto, $secundary-color, 580px);
+  background-image: url(../images/projects/arquitectura_costa_rica_sw.jpg);
+  text-align: center;
+  h1{
+    margin-top: 260px;
+  }
+}
+.secondFrameRightCasaSW{
+  @extend .secondFrameRight;
+  background-color: $primary-color;
+  background-image: url(../images/projects/acabados_arquitectura_sw.jpg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-position-x:center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+
+//
+// Lomas del Bosque
+//
+.mainFrameLomas{
+  @include main-box-setup_bg_image(auto, $secundary-color, 580px);
+  background-image: url(../images/projects/arquitectura_costa_rica_lomas.jpg);
+  text-align: center;
+  h1{
+    margin-top: 260px;
+  }
+}
+.secondFrameRightLomas{
+  @extend .secondFrameRight;
+  background-color: $primary-color;
+  background-image: url(../images/projects/acabados_arquitectura_lomas.jpg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-position-x:center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+
+//
+// Casa Lago Mar
+//
+.mainFrameLagoMar{
+  @include main-box-setup_bg_image(auto, $secundary-color, 580px);
+  background-image: url(../images/projects/arquitectura_costa_rica_lago.jpg);
+  text-align: center;
+  h1{
+    margin-top: 260px;
+  }
+}
+.secondFrameRightLagoMar{
+  @extend .secondFrameRight;
+  background-color: $primary-color;
+  background-image: url(../images/projects/acabados_arquitectura_lago.jpg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-position-x:center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+//
+// Bee Sweet Multicentro
+//
+.mainFrameBeeSweet{
+  @include main-box-setup_bg_image(auto, $secundary-color, 580px);
+  background-image: url(../images/projects/arquitectura_costa_rica_beesweet.jpg);
+  text-align: center;
+  h1{
+    margin-top: 260px;
+  }
+}
+.secondFrameRightBeeSweet{
+  @extend .secondFrameRight;
+  background-color: $primary-color;
+  background-image: url(../images/projects/acabados_arquitectura_beesweet.jpg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-position-x:center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+//
+// Centro Comercial Encuentros
+//
+.mainFrameEncuentros{
+  @include main-box-setup_bg_image(auto, $secundary-color, 580px);
+  background-image: url(../images/projects/arquitectura_costa_rica_encuentros.jpg);
+  text-align: center;
+  h1{
+    margin-top: 260px;
+  }
+}
+.secondFrameRightEncuentros{
+  @extend .secondFrameRight;
+  background-color: $primary-color;
+  background-image: url(../images/projects/acabados_arquitectura_encuentros.jpg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-position-x:center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+//
+// Aprendiendo a Mi Manera
+//
+.mainFrameAprendiendo{
+  @include main-box-setup_bg_image(auto, $secundary-color, 580px);
+  background-image: url(../images/projects/arquitectura_costa_rica_aprendiendo.jpg);
+  text-align: center;
+  h1{
+    margin-top: 260px;
+  }
+}
+.secondFrameRightAprendiendo{
+  @extend .secondFrameRight;
+  background-color: $primary-color;
+  background-image: url(../images/projects/acabados_arquitectura_aprendiendo.jpg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-position-x:center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+//
+// Casa JW
+//
+.mainFrameCasaJW{
+  @include main-box-setup_bg_image(auto, $secundary-color, 580px);
+  background-image: url(../images/projects/arquitectura_costa_rica_CasaJw.jpg);
+  text-align: center;
+  h1{
+    margin-top: 260px;
+  }
+}
+.secondFrameRightCasaJW{
+  @extend .secondFrameRight;
+  background-color: $primary-color;
+  background-image: url(../images/projects/acabados_arquitectura_CasaJW.jpg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-position-x:center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+//
+// Casa Deco 03
+//
+.mainFrameCasaDeco03{
+  @include main-box-setup_bg_image(auto, $secundary-color, 580px);
+  background-image: url(../images/projects/arquitectura_costa_rica_CasaDeco.jpg);
+  text-align: center;
+  h1{
+    margin-top: 260px;
+  }
+}
+.secondFrameRightCasaDeco03{
+  @extend .secondFrameRight;
+  background-color: $primary-color;
+  background-image: url(../images/projects/acabados_arquitectura_CasaDeco.jpg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-position-x:center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+//
+// Nine
+//
+.mainFrameNine{
+  @include main-box-setup_bg_image(auto, $secundary-color, 580px);
+  background-image: url(../images/projects/arquitectura_costa_rica_Nine.jpg);
+  text-align: center;
+  h1{
+    margin-top: 260px;
+  }
+}
+.secondFrameRightNine{
+  @extend .secondFrameRight;
+  background-color: $primary-color;
+  background-image: url(../images/projects/acabados_arquitectura_Nine.jpg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-position-x:center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat:no-repeat;
+}

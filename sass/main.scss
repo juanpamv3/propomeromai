@@ -1,0 +1,457 @@
+//
+// Here start the constructors
+//
+$primary-color: #1DBCBD;
+$secundary-color: #000;
+@font-face {font-family: 'myriad';src: url('../fonts/myriad.otf');}
+$h-font-group: 'myriad';
+$font-group: 'Arial';
+
+/*@mixin div-cover-bg-image ($height,$image){
+  height: $height;
+	background-image: url(../img/$image);
+	background-repeat:no-repeat;
+	background-position: center;
+	background-position-x:center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat:no-repeat;
+}*/
+@mixin paragraph ($font-size, $color) {
+  font-size: $font-size;
+  color: $color;
+  font-family: $font-group;
+}
+@mixin h ($font-size, $color) {
+  font-size: $font-size;
+  color: $color;
+  font-family: $h-font-group;
+  font-weight: bold;
+}
+@mixin box-set-up ($height,$bg-color){
+  height: $height;
+  background-color: $bg-color;
+}
+@mixin custom-button($side-padd, $top-back-padd, $bg-color){
+  padding: $top-back-padd $side-padd;
+  background-color: $bg-color;
+}
+@mixin main-box-setup($height,$bg-color, $min-height){
+  height: $height;
+  background-color: $bg-color;
+  min-height: $min-height;
+  padding: 0px;
+  margin: 0px;
+}
+@mixin main-box-setup_bg_image($height,$bg-color, $min-height){
+  height: $height;
+  min-height: $min-height;
+  background-color: $bg-color;
+  background-repeat:no-repeat;
+  background-position: center;
+  background-position-x:center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+//
+// Here start the main styles
+//
+body{
+  background-color: $primary-color;
+}
+.container{
+  padding: 0px;
+}
+header{
+  @include box-set-up( 1px, $primary-color);
+  position: fixed;
+  width: 16.66666667%;
+}
+  $darkBlue: darken($primary-color, 20%);
+nav{
+
+  ul{
+    @include paragraph (17px, #fff);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin-top: 60px;
+  }
+  li{
+    padding: 10px;
+    border-bottom: solid 1px #fff;
+  }
+  li:hover{
+    background-color: $darkBlue;
+  }
+}
+.closeMenu{
+  @include paragraph(36px, #fff);
+  font-weight: lighter;
+  display: none;
+}
+h1{
+  @include h(36px, #fff);
+}
+h2{
+  @include h(36px, $secundary-color);
+}
+h3{
+  @include paragraph(15px, #fff);
+  background-color: $primary-color;
+  padding: 8px;
+}
+.logoContainer{
+  @include box-set-up(100px, $primary-color);
+  background-image: url(../images/wr_arquitectura_costa_rica.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 44px;
+  padding: 0px;
+}
+/*.socialContent{
+  @include box-set-up(auto, #B2B2B2);
+  min-height: 90px;
+  margin-top: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+}*/
+.cleanA:hover{
+  color: #fff;
+}
+.mainFrame{
+  @include main-box-setup_bg_image(auto, $secundary-color, 580px);
+  background-image: url(../images/arquitectura_costa_rica.jpg);
+  text-align: center;
+
+  h1{
+    margin-top: 260px;
+  }
+}
+.scrollDown{
+  height: 33px;
+  margin-top: 140px;
+}
+.innerContainer{
+  @include box-set-up(auto, #FFF);
+  padding-left: 0px;
+  padding-right: 0px;
+}
+//
+// Here start the second block of information
+//
+.secondFrame{
+  @include box-set-up(auto, #FFF);
+  min-height: 360px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.secondFrameLeft{
+  @extend .secondFrame;
+  padding: 30px;
+
+  p{
+    @include paragraph(15px, #b2b2b2);
+  }
+
+}
+.secondFrameRight{
+  @extend .secondFrame;
+  position: absolute;
+  height: 100%;
+  left: 50%;
+  background-color: $primary-color;
+  background-image: url(../images/diseño_de_casas_contemporaneas.jpg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-position-x:center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+//
+// Here start the third block of information
+//
+.thirdFrame{
+  @include main-box-setup_bg_image(auto, #b2b2b2 , 400px);
+  @include paragraph(16px, #fff);
+  background-image: url(../images/arquitectura_planos_costa_rica.jpg);
+  text-align: center;
+
+  h2{
+    margin-top: 50px;
+  }
+  p{
+    margin: 0px;
+  }
+}
+.servicesContainer{
+  margin-top: 70px;
+  padding: 0px;
+}
+.firstService{
+  padding: 0px;
+  p{
+    border: #fff solid 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+  }
+}
+.services{
+  @extend .firstService;
+  margin-left: 4%;
+}
+//
+// Here start the four block of information
+//
+.fourFrame{
+  @include main-box-setup(auto, #FFF, 540px);
+  text-align: center;
+  h2{
+    margin-top: 50px;
+  }
+}
+.teamPic{
+    margin-top: 30px;
+}
+//
+// Here start the Projects block of information
+//
+.projectsFrame{
+  @include main-box-setup(auto, $secundary-color, 680px);
+  @include paragraph(15px, #fff);
+  text-align: center;
+  a{
+    color: #FFF;
+  }
+}
+.otherProjectsFrame{
+  @include main-box-setup(auto, $secundary-color, auto);
+  padding: 30px;
+  padding-top: 40px;
+  @include paragraph(15px, #fff);
+  text-align: center;
+  a{
+    color: #FFF;
+  }
+  ul{
+    list-style: none;
+  }
+  li{
+    line-height: 40px;
+  }
+  h2{
+    color: #FFF;
+    margin-bottom: 30px;
+  }
+}
+.projects{
+  @include box-set-up (340px ,$secundary-color);
+  padding: 0px;
+}
+.projects:hover{
+  @include box-set-up (340px , #b2b2b2);
+  padding: 0px;
+}
+.projectImage{
+  @include main-box-setup_bg_image(auto, #b2b2b2 , 264px);
+  background-image: url(../images/arquitectura_edificios_costa_rica.jpg);
+  margin-bottom: 12px;
+}
+.projectImage2{
+  @include main-box-setup_bg_image(auto, #b2b2b2 , 264px);
+  background-image: url(../images/casas_modernas_costa_rica.jpg);
+  margin-bottom: 12px;
+}
+.projectImage3{
+  @include main-box-setup_bg_image(auto, #b2b2b2 , 264px);
+  background-image: url(../images/diseño_de_casas_modernas.jpg);
+  margin-bottom: 12px;
+}
+.projectImage4{
+  @include main-box-setup_bg_image(auto, #b2b2b2 , 264px);
+  background-image: url(../images/diseno_de_casas_contemporaneas_costa_rica.jpg);
+  margin-bottom: 12px;
+}
+.projectImage5{
+  @include main-box-setup_bg_image(auto, #b2b2b2 , 264px);
+  background-image: url(../images/casas_vanguardistas.jpg);
+  margin-bottom: 12px;
+}
+.projectImage6{
+  @include main-box-setup_bg_image(auto, #b2b2b2 , 264px);
+  background-image: url(../images/torres_casas_lujo.jpg);
+  margin-bottom: 12px;
+}
+.projectImage7{
+  @include main-box-setup_bg_image(auto, #b2b2b2 , 264px);
+  background-image: url(../images/arquitecto_costa_rica.jpg);
+  margin-bottom: 12px;
+}
+.projectImage8{
+  @include main-box-setup_bg_image(auto, #b2b2b2 , 264px);
+  background-image: url(../images/diseno_de_casas_en_costa_rica.jpg);
+  margin-bottom: 12px;
+}
+.projectImage9{
+  @include main-box-setup_bg_image(auto, #b2b2b2 , 264px);
+  background-image: url(../images/deco03.jpg);
+  margin-bottom: 12px;
+}
+.projectImage10{
+  @include main-box-setup_bg_image(auto, #b2b2b2 , 264px);
+  background-image: url(../images/nine.jpg);
+  margin-bottom: 12px;
+}
+.projectImage11{
+  @include main-box-setup_bg_image(auto, #b2b2b2 , 264px);
+  background-image: url(../images/aprendiendo.jpg);
+  margin-bottom: 12px;
+}
+.projectImage12{
+  @include main-box-setup_bg_image(auto, #b2b2b2 , 264px);
+  background-image: url(../images/casajw.jpg);
+  margin-bottom: 12px;
+}
+//
+// Here start the Footer block of information
+//
+footer{
+  @include main-box-setup(auto, #b2b2b2, 680px);
+  text-align: center;
+  color: #fff;
+  font-family: $font-group;
+}
+.footerLogo{
+  margin: 20px auto;
+}
+.contactBlock{
+  @include box-set-up(auto, #b2b2b2);
+  min-height: 100px;
+  margin-top: 30px;
+  text-align: center;
+  color: #fff;
+}
+.contactInfo{
+  p{
+    margin-top: 20px;
+  }
+}
+.contactSocialBox{
+  @include box-set-up(auto, #b2b2b2);
+  min-height: 50px;
+  margin-top: 40px;
+  text-align: center;
+  color: #fff;
+}
+.rights{
+  @include box-set-up(auto, #b2b2b2);
+  min-height: 50px;
+  margin-top: 10px;
+}
+// Publications
+.publicacionesLink{
+color: $primary-color;
+}
+.publicacionesLink:hover{
+color: $primary-color;
+}
+.publications1{
+  @extend .secondFrame;
+  position: inherit;
+  height: 100%;
+  left: 0%;
+  background-color: $primary-color;
+  background-image: url(../images/publicacion_casa_galeria.jpg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-position-x:center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+//
+// Media QUerys
+//
+@media (max-width: 768px) {
+ .closeMenu{
+    display: block;
+    @include paragraph(36px, #fff);
+    font-weight: lighter;
+  }
+  header{
+    @include box-set-up( 100%, $primary-color);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    right: 100%;
+    opacity: 0;
+  }
+  nav{
+
+    ul{
+      @include paragraph (17px, #fff);
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-align: center;
+      margin-top: 60px;
+    }
+    li{
+      padding: 10px;
+      border-bottom: solid 1px #fff;
+    }
+  }
+  .innerContainer{
+    width: 100%;
+  }
+  .mainFrame{
+    h1{
+      margin-top: 150px;
+    }
+  }
+  .secondFrameRight{
+    @extend .secondFrame;
+    position: inherit;
+    height: 100%;
+    left: 0%;
+    background-color: $primary-color;
+    background-image: url(../images/diseño_de_casas_contemporaneas.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-position-x:center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+  .thirdFrame{
+    padding: 30px 20px;
+  }
+  .glyphicon{
+    margin-top: 30px;
+  }
+  .thirdFrame h2{
+    margin-top: 0px;
+  }
+  footer{
+    padding: 30px 20px;
+  }
+  .contactBlock{
+    margin-top: 0px;
+  }
+}
